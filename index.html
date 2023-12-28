@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="src/css/lightbox.css">
+    <script src="src/js/lightbox.js"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhannad Ekasheh - Modeling Portfolio</title>
+    <style>
+        body {
+            font-family: 'Montserrat';
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #333;
+        }
+
+        header {
+            background-color: url('images/mo.png') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        nav {
+            background-color: #000000;
+            text-align: left; /* Updated to left-align */
+            padding: 10px 40px; /* Added padding */
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 40px;
+            text-align: center;
+        }
+
+        #landing {
+            background: black;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin: 0;
+            padding: 0;
+        }
+        #landing p {
+            font-size: 2.5em; /* Adjust the font size as needed */
+            line-height: 1.9;
+            text-align: center;
+            max-width: 95%; /* Adjust the maximum width as needed */
+            margin: 60px auto; /* Center the text and add vertical spacing */
+            word-wrap: break-word; /* Enable text wrapping */
+        }
+
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 2fr));
+            gap: 13px;
+            justify-content: center;
+        }
+
+        img, video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 6em;
+            opacity: 0;
+            
+        }
+
+        img:hover, video:hover {
+            filter: brightness(80%);
+            transform: scale(1.05);
+            border: 1px solid #ffffff;
+        }
+
+        h1, h2, h4 {
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;  
+            justify-content: center;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        #social-icons {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    
+        #social-icons a img {
+            width: 24px;
+            height: 24px;
+        }
+        #logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 600px; /* Adjust the max-width as needed */
+        }
+        #contact-info-footer {
+            text-align: center;
+            margin-top: 24px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+     <!-- Logo -->
+     <a href="modeling.html"> <!-- Adjust the href attribute to your landing page URL -->
+        <img id="logo" src="images/Muhannad_Ekasheh__1_-removebg-preview.png" alt="Logo">
+    </a>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="videos.html">My Videos</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="https://docs.google.com/document/d/1mpiH_U7g26_m2IEt6Gy15qsR4gdgVRcBaw29fniAIBc/edit?usp=sharing">Resume</a></li>
+        </ul>
+    </nav>
+    
+    
+    <section id="landing">
+        <p>
+        I STRIVE TO BRING MY VERSATILE AUTHENTICITY AND LOVE OF EXPRESSION THROUGH MOVEMENT INTO EVERYTHING I DO AND CREATE
+        </p>
+    </section>
+
+    <!-- photo gallery -->
+    <section id="gallery">
+        <div class="gallery">
+
+            <a href="my_pics/12.jpg" data-lightbox="image-gallery" data-title="Photo 12"><img src="My_pics/12.jpg" alt="Photo 12"></a>
+            <a href="my_pics/13.jpg" data-lightbox="image-gallery" data-title="Photo 13"><img src="my_pics/13.jpg" alt="Photo 13"></a>
+            <a href="my_pics/14.jpg" data-lightbox="image-gallery" data-title="Photo 14"><img src="my_pics/14.jpg" alt="Photo 14"></a>
+            <a href="my_pics/15.jpg" data-lightbox="image-gallery" data-title="Photo 15"><img src="my_pics/15.jpg" alt="Photo 15"></a>
+            <a href="my_pics/16.jpg" data-lightbox="image-gallery" data-title="Photo 16"><img src="my_pics/16.jpg" alt="Photo 16"></a>
+
+            <a href="my_pics/1.jpeg" data-lightbox="image-gallery" data-title="Photo 1"><img src="my_pics/1.jpeg" alt="Photo 1"></a>
+            <a href="my_pics/2.jpeg" data-lightbox="image-gallery" data-title="Photo 2"><img src="my_pics/2.jpeg" alt="Photo 2"></a>
+            <a href="my_pics/3.jpg" data-lightbox="image-gallery" data-title="Photo 3"><img src="my_pics/3.jpg" alt="Photo 3"></a>
+            <a href="my_pics/4.jpeg" data-lightbox="image-gallery" data-title="Photo 4"><img src="my_pics/4.jpeg" alt="Photo 4"></a>
+            <a href="my_pics/5.jpeg" data-lightbox="image-gallery" data-title="Photo 5"><img src="my_pics/5.jpeg" alt="Photo 5"></a>
+            <a href="my_pics/6.jpeg" data-lightbox="image-gallery" data-title="Photo 6"><img src="my_pics/6.jpeg" alt="Photo 6"></a>
+            <a href="my_pics/grad_pic.jpeg" data-lightbox="image-gallery" data-title="grad_pic"><img src="my_pics/grad_pic.jpeg" alt=" grad_pic"></a>
+            <a href="my_pics/7.jpg" data-lightbox="image-gallery" data-title="Photo 7"><img src="my_pics/7.jpg" alt="Photo 7"></a>
+            <a href="my_pics/8.jpeg" data-lightbox="image-gallery" data-title="Photo 8"><img src="my_pics/8.jpeg" alt="Photo 8"></a>
+            <a href="my_pics/9.jpg" data-lightbox="image-gallery" data-title="Photo 9"><img src="my_pics/9.jpg" alt="Photo 9"></a>
+            <a href="my_pics/10.jpeg" data-lightbox="image-gallery" data-title="Photo 10"><img src="my_pics/10.jpeg" alt="Photo 10"></a>
+            <a href="my_pics/11.jpg" data-lightbox="image-gallery" data-title="Photo 11"><img src="my_pics/11.jpg" alt="Photo 11"></a>
+
+        </div>
+    </section>
+
+    <section id="About">
+        <h2>About Me</h2>
+       <section id="About">
+            <p>
+                Welcome to my world of creativity and expression! I embarked on my modeling journey at the young age of 15, and the experience was nothing short of extraordinary. The affirmation of my talent and passion fueled my desire to explore the vast realm of the fashion and commercial industry.
+            </p>
+            <p>
+                Each opportunity became a stepping stone, shaping my skills and perspective in this dynamic field. My dedication and authenticity garnered attention, leading to a series of successful collaborations with renowned brands in commercial ads and various modeling projects. The journey has been a testament to my commitment to the art of storytelling through visuals.
+            </p>
+            <p>
+                Beyond the glitz and glamour, my passion for modeling is a genuine love for the craft. It's about creating narratives, evoking emotions, and leaving a lasting impact on every project. I am driven by the belief that each photograph tells a unique story, and I'm honored to be a part of that storytelling process.
+            </p>
+            <p>
+                In addition to my modeling endeavors, I am proud to be a co-owner of a successful sneaker, clothing, and accessories reselling store. Collaborating with my partners at FameKicks, we have created a platform that celebrates style and individuality, providing fashion enthusiasts with curated selections that resonate with their tastes.
+            </p>
+            <p>
+                I am passionate about pushing boundaries, embracing creativity, and fostering meaningful connections within the industry. If you share the same vision and are interested in collaboration, I'd love to connect. Together, let's continue to create compelling stories and make a lasting impact in the world of fashion and beyond.
+            </p>
+            <p>
+                Thank you for being a part of my journey. Let's create something extraordinary!
+            </p>
+        </section>
+        
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <div id="contact-info-footer">
+            <p>Email: ekashemuhannad@gmail.com</p>
+            <p>Phone: +1(437)669-1169
+            </p>
+        </div>
+    </section>
+    
+    
+    <section id="social-icons">
+        <a href="https://www.linkedin.com/in/muhannad-ekasheh/" target="_blank" title="LinkedIn">
+            <img src="images/vecteezy_linkedin-logo-png-linkedin-logo-transparent-png-linkedin_23986980_531.png" alt="LinkedIn Logo">
+        </a>
+    
+        <a href="https://www.instagram.com/muhannad.aminn" target="_blank" title="Instagram">
+            <img src="images/ig1.jpg" alt="Instagram">
+        </a>
+    </section>
+
+    
+
+</body>
+</html>
